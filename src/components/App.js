@@ -1,5 +1,5 @@
 import React from 'react'
-import { Switch, Route, Redirect } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
 import { injectGlobal, ThemeProvider } from 'styled-components'
 
 import { HomePage, OrganizationsPage, AboutPage, SerPage, SpoonPage, NotFoundPage } from 'components'
