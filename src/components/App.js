@@ -20,8 +20,8 @@ const App = () => {
       <GoogleTagManager />
       <ThemeProvider theme={theme}>
         <Switch>
-          <Redirect to="/" />
           <Route path="/" component={HomePage} exact />
+          <Route path="/index.html" component={HomePage} />
           <Route path="/ser" component={SerPage} />
           <Route path="/work" component={SerPage} />
           <Route path="/spoon" component={SpoonPage} />
