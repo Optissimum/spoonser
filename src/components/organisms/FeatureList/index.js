@@ -35,63 +35,31 @@ const StyledFeature = styled(Feature)`
 
 const FeatureList = ({ ...props }) => (
   <div {...props}>
-    <StyledHeading>Organizations</StyledHeading>
+    <StyledHeading>What is SpoonSer</StyledHeading>
     <Description>
-      Places in the local community we are currently working with:<br />
-      <Link href="/">Register your organization today!</Link>
+      SpoonSer is a not-for-profit Asheville start-up focused on breathing life into volunteer based efforts by giving people a way to fund volunteering. This allows you to help your community even if you cannot afford the time to volunteer, or want to volunteer but cannot afford the cost of giving up valuable time.
     </Description>
     <Grid>
       <StyledFeature
         icon="react"
-        link="https://www.buncombecounty.org/governing/depts/library/Default.aspx"
-        title="Buncombe Library"
-      />
+        title="Support your local community"
+      >Use your money to directly make an impact on your local community today by sponsoring someone so that they can use their time to volunteer without worry of not being able to support themselves at the same time.</StyledFeature>
       <StyledFeature
-        icon="react-router"
-        link="https://github.com/ReactTraining/react-router"
-        title="React Router"
-        code={'<Route path="/sample-page" />'}
-      >
-        The most popular declarative routing library for React and React Native.
-      </StyledFeature>
-      <StyledFeature
-        icon="webpack"
-        link="https://webpack.github.io/"
-        title="Webpack"
-        code="npm run build"
-      >
-        The awesome module bundler with <Link href="https://webpack.github.io/docs/hot-module-replacement.html">Hot Module Replacement</Link> enabled.
-      </StyledFeature>
-      <StyledFeature
-        icon="jest"
-        link="https://facebook.github.io/jest"
-        title="Jest"
-        code="npm run test"
-      >
-        The great testing framework used by Facebook to test all their Javascript code.
-      </StyledFeature>
+        icon="react"
+        title="Volunteer"
+      >Have a place you want to volunteer at, but are limited by the fact that you cannot support yourself if you were to volunteer? Then SpoonSer was designed with you in mind!</StyledFeature>
     </Grid>
-    <StyledHeading>Optional features</StyledHeading>
-    <Description>
-      Features separated into another branches so you can use them only if you need to.
-    </Description>
+    <StyledHeading>How to get started</StyledHeading>
+    <Description>Want to get started? Below are are a few options that we offer.</Description>
     <Grid>
       <StyledFeature
-        icon="redux"
-        link="https://github.com/diegohaz/arc/tree/redux"
-        title="Redux"
-        code="git clone -b redux https://github.com/diegohaz/arc my-app"
-      >
-        The predictable state container for JavaScript apps.
-      </StyledFeature>
+        icon="react"
+        title="Fund a location"
+      >Become a Spoon to your local community by defining a location that you want someone to volunteer at. Any time a volunteer works here they will be placed into the pool based on the amount of time they spent volunteering, and at the end of your defined amount of time the fund will be split proportionally amongst all who worked there. You can also set minimum and maximum caps for a location.</StyledFeature>
       <StyledFeature
-        icon="dist"
-        link="https://github.com/diegohaz/arc/tree/redux-ssr"
-        title="Server Side Rendering"
-        code="git clone -b redux-ssr https://github.com/diegohaz/arc my-app"
-      >
-        Write once and run on both server and client.
-      </StyledFeature>
+        icon="react"
+        title="Fund a volunteer"
+      >Become a Spoon to your local community by funding a volunteer directly. You will have a handful of defining options, such as a set of locations you'd like for them to volunteer at, how many volunteer hours you'd like for them to work within a defined time, a minimum or maximum cap, or you could just set an hourly rate. At the end of the pay period the calculated fund is allotted to the volunteer.</StyledFeature>
     </Grid>
   </div>
 )
