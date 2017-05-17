@@ -38,7 +38,7 @@ const OrganizationList = ({ ...props }) => (
     <StyledHeading>Organizations</StyledHeading>
     <Description>
       Places in the local community we are currently working with:<br />
-      <Link href="/">Register your organization today!</Link>
+      <Link href="/organization-registry">Register your organization today!</Link>
     </Description>
     <Grid>
       <StyledFeature
