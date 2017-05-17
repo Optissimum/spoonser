@@ -8,8 +8,6 @@ import {
   IconLink,
   IconButton,
   LogoImage,
-  PreformattedText,
-  Heading,
   Tooltip,
 } from 'components'
 
@@ -70,6 +68,8 @@ const ButtonGroup = styled.div`
 `
 
 const Instructions = styled.div`
+  display: flex;
+  flex-direction: row-reverse;
   width: 100%;
   margin-top: 2rem;
   @media screen and (max-width: 640px) {
@@ -84,28 +84,24 @@ const Hero = (props) => {
         <Section>
           <LogoImage height={265} />
           <ButtonGroup>
-            <Tooltip reverse data-title="Just a fancy tooltip 😄">
-              <IconButton icon="github" href="https://github.com/diegohaz/arc">GitHub</IconButton>
+            <Tooltip reverse data-title="Sponsor" position="bottom">
+              <IconButton icon="spoon" transparent href="/spoon">Spoon</IconButton>
             </Tooltip>
-            <Tooltip reverse data-title="Another tooltip aligned differently" align="end" position="bottom">
-              <IconButton icon="docs" href="https://github.com/diegohaz/arc/wiki">Docs</IconButton>
+            <Tooltip reverse data-title="Volunteer" position="bottom">
+              <IconButton icon="account" transparent href="/ser" right>Ser</IconButton>
             </Tooltip>
           </ButtonGroup>
         </Section>
         <Section>
           <Text>
-            <strong>ARc</strong> is a <IconLink reverse icon="react" href="https://facebook.github.io/react/">React</IconLink> starter kit based on the <IconLink reverse icon="atomic-design" href="http://bradfrost.com/blog/post/atomic-web-design/">Atomic Design</IconLink> methodology. It&apos;s <strong>progressive</strong>, which means that you can start with the basic boilerplate and try the other features when you are comfortable.
+            <strong>Spoonser</strong> is a not-for-profit Asheville start-up focused on breathing life into volunteer based efforts by giving people a way to fund volunteering. This allows you to help your community even if you cannot afford the time to volunteer, or want to volunteer but cannot afford the cost of giving up valuable time.
           </Text>
           <Instructions>
-            <Heading level={2} reverse>Install</Heading>
-            <PreformattedText block reverse wrap>
-              git clone -b master https://github.com/diegohaz/arc my-app
-            </PreformattedText>
             <IconLink
               icon="docs"
               right
               reverse
-              href="https://github.com/diegohaz/arc/wiki/Setup"
+              href="/about"
             >
               Learn more
             </IconLink>
