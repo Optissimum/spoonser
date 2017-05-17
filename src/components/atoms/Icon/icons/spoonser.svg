@@ -27,7 +27,7 @@
      inkscape:window-height="1056"
      id="namedview8"
      showgrid="false"
-     inkscape:zoom="5.9"
+     inkscape:zoom="21.5"
      inkscape:cx="15.999999"
      inkscape:cy="20"
      inkscape:window-x="48"
@@ -51,16 +51,16 @@
   <g
      transform="translate(-338.28571,-426.64792)"
      id="layer1"
-     style="fill:#7e9189;fill-opacity:1">
+     style="fill:#2e70c1;fill-opacity:1;stroke:none">
     <g
        id="g3398"
        transform="matrix(2,0,0,2,330.28571,422.64792)"
-       style="fill:#7e9189;fill-opacity:1">
+       style="fill:#2e70c1;fill-opacity:1;stroke:none">
       <path
          id="path3403"
          transform="scale(0.5,0.5)"
          d="M 12,4 C 9.8,4 8,5.8 8,8 l 0,32 c 0,2.2 1.8,4 4,4 l 24,0 c 2.2,0 4,-1.8 4,-4 L 40,8 C 40,5.8 38.2,4 36,4 Z m 2.003906,4 3.992188,0 0,13.802734 c 1.583919,0.579828 2.751953,2.454525 2.751953,4.703125 0.007,2.708218 -2.05949,4.898438 -4.689453,4.898438 -2.629963,0 -4.813712,-2.19022 -4.806641,-4.898438 0,-2.2486 1.168034,-4.123297 2.751953,-4.703125 z"
-         style="fill:#7e9189;fill-opacity:1" />
+         style="fill:#2e70c1;fill-opacity:1;stroke:none" />
     </g>
   </g>
 </svg>
