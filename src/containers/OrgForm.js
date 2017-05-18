@@ -14,6 +14,9 @@ const validate = createValidator({
   address1: [required],
   state: [required],
   zip: [required],
+  phone: [required],
+  email: [required],
+  taxId: [required],
 })
 
 export default reduxForm({
