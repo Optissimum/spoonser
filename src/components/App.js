@@ -1,5 +1,5 @@
 import React from 'react'
-import { Switch, Route, BrowserRouter } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
 import { injectGlobal, ThemeProvider } from 'styled-components'
 
 import { HomePage, OrganizationsPage, AboutPage, SerPage, SpoonPage, NotFoundPage, OrgRegisterPage } from 'components'
@@ -19,20 +19,18 @@ const App = () => {
     <div>
       <GoogleTagManager />
       <ThemeProvider theme={theme}>
-        <BrowserRouter>
-          <Switch>
-            <Route path="/" component={HomePage} exact />
-            <Route path="/index.html" component={HomePage} />
-            <Route path="/ser" component={SerPage} />
-            <Route path="/work" component={SerPage} />
-            <Route path="/spoon" component={SpoonPage} />
-            <Route path="/support" component={SpoonPage} />
-            <Route path="/organization" component={OrganizationsPage} />
-            <Route path="/orgregistry" component={OrgRegisterPage} />
-            <Route path="/about" component={AboutPage} />
-            <Route path="*" component={NotFoundPage} />
-          </Switch>
-        </BrowserRouter>
+        <Switch>
+          <Route path="/" component={HomePage} exact />
+          <Route path="/index.html" component={HomePage} />
+          <Route path="/ser" component={SerPage} />
+          <Route path="/work" component={SerPage} />
+          <Route path="/spoon" component={SpoonPage} />
+          <Route path="/support" component={SpoonPage} />
+          <Route path="/organization" component={OrganizationsPage} />
+          <Route path="/organization_registry" component={OrgRegisterPage} />
+          <Route path="/about" component={AboutPage} />
+          <Route path="*" component={NotFoundPage} />
+        </Switch>
       </ThemeProvider>
     </div>
   )
