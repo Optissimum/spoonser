@@ -42,7 +42,6 @@ const OrganizationList = ({ ...props }) => (
     </Description>
     <Grid>
       <StyledFeature
-        img="https://assets.merriam-webster.com/mw/images/gallery/gal-wap-slideshow-slide/a-thoughtful-guide-to-words-about-nonsense-bunkum-693@1x.jpg"
         link="https://www.buncombecounty.org/governing/depts/library/Default.aspx"
         title="Buncombe Library"
       />

@@ -27,7 +27,7 @@ const App = () => {
           <Route path="/spoon" component={SpoonPage} />
           <Route path="/support" component={SpoonPage} />
           <Route path="/organization" component={OrganizationsPage} />
-          <Route path="/organization_registry" component={OrgRegisterPage} />
+          <Route path="/orgregistry" component={OrgRegisterPage} />
           <Route path="/about" component={AboutPage} />
           <Route path="*" component={NotFoundPage} />
         </Switch>
