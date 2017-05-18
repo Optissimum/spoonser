@@ -44,7 +44,7 @@ const config = createConfig([
     app: sourcePath,
   }),
   setOutput({
-    filename: '[name].js',
+    filename: 'bundle.js',
     path: outputPath,
     publicPath,
   }),
@@ -81,8 +81,12 @@ const config = createConfig([
   ]),
 
   env('production', [
-    splitVendor(),
     addPlugins([
+      new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify('production')
+      }
+    }),
       new webpack.optimize.UglifyJsPlugin({ compress: { warnings: false } }),
     ]),
   ]),
