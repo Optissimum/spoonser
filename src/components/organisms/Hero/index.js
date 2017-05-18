@@ -85,10 +85,10 @@ const Hero = (props) => {
           <LogoImage height={265} />
           <ButtonGroup>
             <Tooltip reverse data-title="Sponsor" position="bottom">
-              <IconButton icon="spoon" transparent href="/spoon">Spoon</IconButton>
+              <IconButton icon="spoon" transparent to="/spoon">Spoon</IconButton>
             </Tooltip>
             <Tooltip reverse data-title="Volunteer" position="bottom">
-              <IconButton icon="account" transparent href="/ser" right>Ser</IconButton>
+              <IconButton icon="account" transparent to="/ser" right>Ser</IconButton>
             </Tooltip>
           </ButtonGroup>
         </Section>

@@ -41,13 +41,13 @@ const StyledBadge = styled(Badge)`
   }
 `
 
-const Feature = ({ icon, title, link, code, children, ...props }) => {
+const Feature = ({ icon, title, link, to, code, children, ...props }) => {
   return (
     <Wrapper {...props}>
       {icon && <StyledIcon icon={icon} width={64} />}
       <Text>
         <Heading level={2}>
-          {link ? <Link href={link}>{title}</Link> : title}
+          {link ? <Link href={link}>{title}</Link> : (to ? <Link to={link}>{title}</Link> : title)}
         </Heading>
         <Paragraph>{children}</Paragraph>
         {code && <PreformattedText block>{code}</PreformattedText>}
@@ -61,6 +61,7 @@ Feature.propTypes = {
   title: PropTypes.string.isRequired,
   icon: PropTypes.string,
   link: PropTypes.string,
+  to: PropTypes.string,
   soon: PropTypes.bool,
   children: PropTypes.any,
   code: PropTypes.node,
