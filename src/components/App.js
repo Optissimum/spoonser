@@ -1,5 +1,5 @@
 import React from 'react'
-import { Switch, Route } from 'react-router-dom'
+import { Switch, Route, Redirect } from 'react-router-dom'
 import { injectGlobal, ThemeProvider } from 'styled-components'
 
 import { HomePage, OrganizationsPage, AboutPage, SerPage, SpoonPage, NotFoundPage, OrgRegisterPage } from 'components'
@@ -21,7 +21,7 @@ const App = () => {
       <ThemeProvider theme={theme}>
         <Switch>
           <Route path="/" component={HomePage} exact />
-          <Route path="/index.html" component={HomePage} />
+          <Redirect pathname="/index.html" to='/' />
           <Route path="/ser" component={SerPage} />
           <Route path="/work" component={SerPage} />
           <Route path="/spoon" component={SpoonPage} />
@@ -29,7 +29,7 @@ const App = () => {
           <Route path="/organization" component={OrganizationsPage} />
           <Route path="/orgregistry" component={OrgRegisterPage} />
           <Route path="/about" component={AboutPage} />
-          <Route path="*" component={NotFoundPage} />
+          <Route component={NotFoundPage} />
         </Switch>
       </ThemeProvider>
     </div>
